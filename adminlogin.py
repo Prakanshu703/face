@@ -119,7 +119,7 @@ class AdminLogin_window:
     ########################################Reset Password##############################################
     
     def reset_pass(self):
-      if self.txtuser.get()=="":
+      if self.txt_email.get()=="":
         messagebox.showerror("Error","Please enter your email",parent=self.root2)
       elif self.txt_newpass.get()=="":
         messagebox.showerror("Error","Please enter the new password",parent=self.root2)
@@ -127,14 +127,14 @@ class AdminLogin_window:
          conn=mysql.connector.connect(host="localhost",user="rahul",password="1234",database="mydata")
          my_cursor=conn.cursor()
          query=("select * from admin where email=%s")
-         value=(self.txtuser.get(),)
+         value=(self.txt_email.get(),)
          my_cursor.execute(query,value) 
          row=my_cursor.fetchone()
          if row==None:
            messagebox.showerror("Error","Email not found",parent=self.root2)
          else:
            query=("update admin set password=%s where email=%s")
-           value=(self.txt_newpass.get(),self.txtuser.get())
+           value=(self.txt_newpass.get(),self.txt_email.get())
            my_cursor.execute(query,value)
            
            conn.commit()
