@@ -130,7 +130,7 @@ class AdminLogin_window:
          value=(self.txtuser.get(),)
          my_cursor.execute(query,value) 
          row=my_cursor.fetchone()
-         if row is None:
+         if row==None:
            messagebox.showerror("Error","Email not found",parent=self.root2)
          else:
            query=("update admin set password=%s where email=%s")
