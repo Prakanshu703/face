@@ -96,10 +96,10 @@ class Student_Face_Recognition_System:
       self.photoimg5=ImageTk.PhotoImage(img5)
         
       b1=Button(bg_img,image=self.photoimg5,cursor="hand2",command=self.face_data) 
-      b1.place(x=500,y=100, width=220, height=220)
+      b1.place(x=600,y=100, width=220, height=220)
         
       b1_1=Button(bg_img,text="Face Detector",command=self.face_data,cursor="hand2", font=("times new roman",15,"bold"),bg="blue",fg="white")
-      b1_1.place(x=500,y=300,width=220,height=40)
+      b1_1.place(x=600,y=300,width=220,height=40)
 
 
       #************************Functions button************************
