@@ -34,28 +34,12 @@ class Student:
 
       # first imag
       img=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733.jpg")
-      img=img.resize((500,130),Image.LANCZOS)
+      img=img.resize((1530,130),Image.LANCZOS)
       self.photoimg=ImageTk.PhotoImage(img)
 
       f_lbl=Label(self.root,image=self.photoimg)            
-      f_lbl.place(x=0,y=0,width=500,height=130)
+      f_lbl.place(x=0,y=0,width=1530,height=130)
 
-      # second image
-
-      img1=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733.jpg")
-      img1=img1.resize((500,130), Image.LANCZOS)
-      self.photoimg1=ImageTk.PhotoImage(img1)
-
-      f_lbl=Label(self.root,image= self.photoimg1)
-      f_lbl.place(x=500,y=0,width=500,height=130)
-
-      #third imag
-      img2=Image.open(r"clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733.jpg")
-      img2=img2.resize((550,130),Image.LANCZOS)
-      self.photoimg2=ImageTk.PhotoImage(img2)
-
-      f_lbl=Label(self.root,image=self.photoimg2)
-      f_lbl.place(x=1000,y=0,width=550,height=130)
 
       #bg image
       img3=Image.open(r"clg images\W1M7KR.jpg")

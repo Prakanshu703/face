@@ -25,20 +25,13 @@ class Attendance:
        self.var_atten_attendance=StringVar()
       
        # first imag
-       img=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733.jpg")
-       img=img.resize((800,200),Image.LANCZOS)
+       img=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Attendance Management-01.webp")
+       img=img.resize((1530,200),Image.LANCZOS)
        self.photoimg=ImageTk.PhotoImage(img)
 
        f_lbl=Label(self.root,image=self.photoimg)            
-       f_lbl.place(x=0,y=0,width=800,height=200) 
+       f_lbl.place(x=0,y=0,width=1530,height=200) 
 
-       # second image
-       img1=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733.jpg")
-       img1=img1.resize((800,200), Image.LANCZOS)
-       self.photoimg1=ImageTk.PhotoImage(img1)
-
-       f_lbl=Label(self.root,image= self.photoimg1)
-       f_lbl.place(x=800,y=0,width=800,height=200) 
 
        #bg image
        img3=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\W1M7KR.jpg")
@@ -48,7 +41,7 @@ class Attendance:
        bg_img=Label(self.root,image=self.photoimg3)
        bg_img.place(x=0,y=200,width=1530,height=710)
 
-       title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMENT SYSTEM ", font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
+       title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMENT SYSTEM ", font=("times new roman",35,"bold"),bg="white",fg="green")
        title_lbl.place(x=0,y=0,width=1530,height=45)
 
        main_frame=Frame(bg_img,bd=2,bg="white") 
