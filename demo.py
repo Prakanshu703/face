@@ -70,7 +70,6 @@ class Login_window:
         # LoginButton
         loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#57a1f8",border=0,activeforeground="white",activebackground="red")
         loginbtn.place(x=30,y=300,width=280,height=35)
-        
         label=Label(frame,text="Don't have an account?",fg='black',bg='white',font=('times new roman',9))
         label.place(x=30, y=350)
         # RegisterButton
