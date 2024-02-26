@@ -64,18 +64,18 @@ class AdminLogin_window:
  
          
         # LoginButton
-        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#57a1f8",border=0,activeforeground="white",activebackground="red")
+        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#483ECD",border=0,activeforeground="white",activebackground="red")
         loginbtn.place(x=30,y=300,width=280,height=35)
         label=Label(frame,text="Don't have an account?",fg='black',bg='white',font=('times new roman',9))
         label.place(x=30, y=350)
         # RegisterButton
-        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="black")
+        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#483ECD",activeforeground="white",activebackground="black")
         registerbtn.place(x=175,y=350)
 
         label2=Label(frame,text="Forgot your password?",fg='black',bg='white',font=('times new roman',9))
         label2.place(x=30, y=385)
         #forgetpasswordButton
-        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="black")
+        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#483ECD",activeforeground="white",activebackground="black")
         passwordbtn.place(x=170,y=385)
 
        
