@@ -121,7 +121,7 @@ class Login_window:
           if row==None:
             messagebox.showerror("Error","Invalid Username & Password")
           else:
-            open_main=messagebox.askyesno("YesNo","Access only admin")
+            open_main=messagebox.askyesno("YesNo","Access only Student")
             if open_main>0:
                     self.new_window=Toplevel(self.root)
                     self.app=Student_Face_Recognition_System(self.new_window)
