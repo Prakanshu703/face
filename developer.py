@@ -34,16 +34,16 @@ class Developer:
       f_lbl.place(x=300,y=0,width=200,height=200)
       
       # Developer info
-      dev_label=Label(main_frame,text="Hello , I'm Rahul", font=("Arial",20,"bold"),fg="blue",bg="white")
+      dev_label=Label(main_frame,text="Name : Rahul", font=("Arial",20,""),fg="blue",bg="white")
       dev_label.place(x=0,y=5)
       
-      dev_label=Label(main_frame,text="Full Stack Developer", font=("Arial",20,"bold"),fg="black",bg="white")
+      dev_label=Label(main_frame,text="Full Stack Developer", font=("Arial",20,""),fg="black",bg="white")
       dev_label.place(x=0,y=50)
       
-      dev_label=Label(main_frame,text="Role:Lead Developer", font=("Arial",20,"bold"),fg="blue",bg="white")
+      dev_label=Label(main_frame,text="Role:Lead Developer", font=("Arial",20,""),fg="blue",bg="white")
       dev_label.place(x=0,y=100)
       
-      dev_label=Label(main_frame,text="Expertise:Python", font=("Arial",20,"bold"),fg="black",bg="white")
+      dev_label=Label(main_frame,text="Expertise:Python", font=("Arial",20,""),fg="black",bg="white")
       dev_label.place(x=0,y=150)
       
       img2=Image.open(r"clg images\Full-Stack-Developer.webp")
