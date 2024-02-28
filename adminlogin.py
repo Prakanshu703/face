@@ -30,7 +30,7 @@ class AdminLogin_window:
         self.root.geometry("1550x800+0+0")
         
         
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733 (1).jpg") 
+        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\W1M7KR.jpg") 
         lbl_bg=Label(self.root,bg="black",image=self.bg)
         lbl_bg.place(x=0,y=0,relwidth=1,relheight=1)
 
