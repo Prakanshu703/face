@@ -51,7 +51,7 @@ class Attendance:
        Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Attendance Details",font=("times new roman",12,"bold"))
        Left_frame.place(x=10,y=10,width=730,height=580)
       
-       img_left=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\images (4).jpg")
+       img_left=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\istockphoto-170958625-612x612.jpg")
        img_left=img_left.resize((720, 130),Image.LANCZOS)
        self.photoimg_left=ImageTk.PhotoImage(img_left)
       
