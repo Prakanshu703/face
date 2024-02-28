@@ -206,13 +206,17 @@ class Attendance:
       cursor_rows=self.AttendaceReportTable.focus()
       content=self.AttendaceReportTable.item(cursor_rows)
       rows=content['values']
-      self.var_atten_id.set(rows[0])
-      self.var_atten_roll.set(rows[1])
-      self.var_atten_name.set(rows[2])
-      self.var_atten_dep.set(rows[3])
-      self.var_atten_time.set(rows[4])
-      self.var_atten_date.set(rows[5])
-      self.var_atten_attendance.set(rows[6])
+      if rows:
+        
+         self.var_atten_id.set(rows[0])
+         self.var_atten_roll.set(rows[1])
+         self.var_atten_name.set(rows[2])
+         self.var_atten_dep.set(rows[3])
+         self.var_atten_time.set(rows[4])
+         self.var_atten_date.set(rows[5])
+         self.var_atten_attendance.set(rows[6])
+      else:
+        pass
       
     def reset_data(self):
       self.var_atten_id.set("")
