@@ -45,40 +45,24 @@ class Face_Recognition_System:
       
 
       # first imag
-      img=Image.open(r"clg images\0_u190t7LKR908teW7.jpg")
-      img=img.resize((500,130),Image.LANCZOS)
+      img=Image.open(r"clg images\face attendance_banner.png")
+      img=img.resize((1530,250),Image.LANCZOS)
       self.photoimg=ImageTk.PhotoImage(img)
 
       f_lbl=Label(self.root,image=self.photoimg)            
-      f_lbl.place(x=0,y=0,width=500,height=130)
+      f_lbl.place(x=0,y=0,width=1530,height=150) 
 
-      # second image
-
-      img1=Image.open(r"clg images\facial_recognition_reuters-759.jpg")
-      img1=img1.resize((500,130), Image.LANCZOS)
-      self.photoimg1=ImageTk.PhotoImage(img1)
-
-      f_lbl=Label(self.root,image= self.photoimg1)
-      f_lbl.place(x=500,y=0,width=500,height=130)
-
-      #third imag
-      img2=Image.open(r"clg images\face-recognition-ar-hologram-screen-smart-technology_53876-167350 (1).webp")
-      img2=img2.resize((550,130),Image.LANCZOS)
-      self.photoimg2=ImageTk.PhotoImage(img2)
-
-      f_lbl=Label(self.root,image=self.photoimg2)
-      f_lbl.place(x=1000,y=0,width=550,height=130)
 
       #bg image
-      img3=Image.open(r"clg images\W1M7KR.jpg")
+      img3=Image.open(r"clg images\backgroung_img.png")
       img3=img3.resize((1530,710),Image.LANCZOS)
       self.photoimg3=ImageTk.PhotoImage(img3)
 
       bg_img=Label(self.root,image=self.photoimg3)
       bg_img.place(x=0,y=130,width=1530,height=710)
 
-      title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE SYSTEM SOFTWARE", font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
-      title_lbl.place(x=0,y=0,width=1530,height=45)
+      title_lbl=Label(bg_img, font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
+      title_lbl.place(x=0,y=0,width=1530,height=35)
       
       # ******************time*****************
       def time():

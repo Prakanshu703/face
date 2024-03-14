@@ -25,8 +25,8 @@ class Attendance:
        self.var_atten_attendance=StringVar()
       
        # first imag
-       img=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Attendance Management-01.webp")
-       img=img.resize((1530,200),Image.LANCZOS)
+       img=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Screenshot 2024-03-13 212351.png")
+       img=img.resize((1530,450),Image.LANCZOS)
        self.photoimg=ImageTk.PhotoImage(img)
 
        f_lbl=Label(self.root,image=self.photoimg)            
@@ -34,15 +34,15 @@ class Attendance:
 
 
        #bg image
-       img3=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\W1M7KR.jpg")
+       img3=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\backgroung_img.png")
        img3=img3.resize((1530,710),Image.LANCZOS)
        self.photoimg3=ImageTk.PhotoImage(img3)
 
        bg_img=Label(self.root,image=self.photoimg3)
        bg_img.place(x=0,y=200,width=1530,height=710)
 
-       title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMENT SYSTEM ", font=("times new roman",35,"bold"),bg="white",fg="green")
-       title_lbl.place(x=0,y=0,width=1530,height=45)
+       #title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMENT SYSTEM ", font=("times new roman",35,"bold"),bg="white",fg="green")
+       #title_lbl.place(x=0,y=0,width=1530,height=45)
 
        main_frame=Frame(bg_img,bd=2,bg="white") 
        main_frame.place(x=20,y=55,width=1480,height=600)
@@ -51,7 +51,7 @@ class Attendance:
        Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Attendance Details",font=("times new roman",12,"bold"))
        Left_frame.place(x=10,y=10,width=730,height=580)
       
-       img_left=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\istockphoto-170958625-612x612.jpg")
+       img_left=Image.open(r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Attendance_banner.png")
        img_left=img_left.resize((720, 130),Image.LANCZOS)
        self.photoimg_left=ImageTk.PhotoImage(img_left)
       
@@ -117,16 +117,16 @@ class Attendance:
        btn_frame=Frame(left_inside_frame,bd=2,relief=RIDGE,bg="white") 
        btn_frame.place(x=0,y=300,width=715,height=35)
 
-       import_btn=Button(btn_frame, text="Import csv",command=self.importCsv,width=17, font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="red") 
+       import_btn=Button(btn_frame, text="Import csv",command=self.importCsv,width=17, font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="#483ECD") 
        import_btn.grid(row=0,column=0)
 
-       export_btn=Button(btn_frame, text="Export csv",command=self.exportCsv,width=17,font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="red")
+       export_btn=Button(btn_frame, text="Export csv",command=self.exportCsv,width=17,font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="#483ECD")
        export_btn.grid(row=0,column=1)
 
-       update_btn=Button(btn_frame, text="Update",width=17, font=("times new roman", 13, "bold"),bg="#57a1f8", fg="white",activebackground="red")
+       update_btn=Button(btn_frame, text="Update",width=17, font=("times new roman", 13, "bold"),bg="#57a1f8", fg="white",activebackground="#483ECD")
        update_btn.grid(row=0,column=2)
 
-       reset_btn=Button(btn_frame, text="Reset",command=self.reset_data,width=17,font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="red")
+       reset_btn=Button(btn_frame, text="Reset",command=self.reset_data,width=17,font=("times new roman",13,"bold"),bg="#57a1f8", fg="white",activebackground="#483ECD")
        reset_btn.grid(row=0,column=3)
       
        #Right label frame

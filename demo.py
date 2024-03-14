@@ -4,7 +4,7 @@ from PIL import Image,ImageTk    #pip install pillow
 from student import Student
 from tkinter import messagebox
 import mysql.connector
-from pwinput import pwinput
+#from pwinput import pwinput
 from studentrecog import Student_Face_Recognition_System
 from adminlogin import AdminLogin_window
 
@@ -34,18 +34,18 @@ class Login_window:
         self.root.geometry("1550x800+0+0")
         
         
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733 (1).jpg") 
+        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Bluebg_1.jpg") 
         lbl_bg=Label(self.root,bg="black",image=self.bg)
         lbl_bg.place(x=0,y=0,relwidth=1,relheight=1)
 
         
         frame=Frame(self.root,bg="white")
-        frame.place(x=610,y=170,width=340,height=450)
+        frame.place(x=610,y=170,width=360,height=450)
         
  
         
-        get_str=Label(frame,text="Welcome",font=("times new roman",25,"bold"),fg="black",bg="white")
-        get_str.place(x=100,y=20)
+        get_str=Label(frame,text="Welcome | Student",font=("times new roman",25,"bold"),fg="black",bg="white")
+        get_str.place(x=50,y=20)
 
         get_str1=Label(frame,text="Enter your credentials to access your account",font=("times new roman",12,"bold"),fg="#B3B3B3",bg="white")
         get_str1.place(x=17,y=65)   
@@ -68,18 +68,18 @@ class Login_window:
  
          
         # LoginButton
-        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#57a1f8",border=0,activeforeground="white",activebackground="red")
+        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#57a1f8",border=0,activeforeground="white",activebackground="#483ECD")
         loginbtn.place(x=30,y=300,width=280,height=35)
         label=Label(frame,text="Don't have an account?",fg='black',bg='white',font=('times new roman',9))
         label.place(x=30, y=350)
         # RegisterButton
-        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="black")
+        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="#483ECD")
         registerbtn.place(x=175,y=350)
 
         label2=Label(frame,text="Forgot your password?",fg='black',bg='white',font=('times new roman',9))
         label2.place(x=30, y=385)
         #forgetpasswordButton
-        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="black")
+        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#57a1f8",activeforeground="white",activebackground="#483ECD")
         passwordbtn.place(x=170,y=385)
         
         #AdminLoginButton
@@ -235,7 +235,7 @@ class Register:
         self.var_confpass=StringVar()
         
       # ************bg image**************
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733 (1).jpg")
+        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Bluebg_2.jpg")
         
         bg_lbl=Label(self.root,image=self.bg)
         bg_lbl.place(x=0,y=0,relwidth=1,relheight=1)
@@ -248,12 +248,12 @@ class Register:
         frame=Frame(self.root,bg="white")
         frame.place(x=450,y=100,width=680,height=550)
         
-        register_lbl=Label(frame,text="Join us today!",font=("times new roman",25,"bold"),fg="black",bg="white")
-        register_lbl.place(x=250,y=20)
+        register_lbl=Label(frame,text="Join us today! | Student",font=("times new roman",25,"bold"),fg="black",bg="white")
+        register_lbl.place(x=160,y=20)
         
          #*******************label and entry*********************
         label = Label(frame,text="Sign up now to become a member",fg='#B3B3B3',bg='white',font=('times new roman',15,"bold"))
-        label.place(x=200, y = 60)
+        label.place(x=190, y = 60)
         #*******************row1
         fname=Label(frame,text="First Name",font=("times new roman",15,"bold"),bg="white")
         fname.place(x=50,y=100)
@@ -317,7 +317,7 @@ class Register:
          
          #*********************Button******************************
 
-        b1=Button(frame,command=self.register_data,text="Registeration",font=("times new roman",15,"bold"),fg="white",bd=3,relief=RIDGE,bg="#57a1f8",border=0,activeforeground="white",activebackground="red")
+        b1=Button(frame,command=self.register_data,text="Registeration",font=("times new roman",15,"bold"),fg="white",bd=3,relief=RIDGE,bg="#57a1f8",border=0,activeforeground="white",activebackground="#483ECD")
         b1.place(x=50,y=450,width=575,height=35)
         
 
@@ -325,7 +325,7 @@ class Register:
         label.place(x=50, y = 500)
         # RegisterButton
         
-        b1=Button(frame,width=6,command=self.return_login,text="Login",borderwidth=0,font=("times new roman",10,"bold"),fg="#57a1f8",bd=3,relief=RIDGE,bg="white",border=0,activeforeground="white",activebackground="red")
+        b1=Button(frame,width=6,command=self.return_login,text="Login",borderwidth=0,font=("times new roman",10,"bold"),fg="#57a1f8",bd=3,relief=RIDGE,bg="white",border=0,activeforeground="white",activebackground="#483ECD")
         b1.place(x=200,y=500)
         
       

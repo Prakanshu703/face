@@ -17,11 +17,11 @@ class Face_Recognition:
        self.root.title("Face Recognition System")
        
        
-       title_lbl=Label(self.root,text="FACE RECOGNITION", font=("times new roman",35,"bold"),bg="white",fg="green")
+       title_lbl=Label(self.root,text="FACE RECOGNITION", font=("times new roman",35,"bold"),bg="DodgerBlue",fg="white")
        title_lbl.place(x=0,y=0,width=1530,height=45)
        
        # 1st image
-       img_top=Image.open(r"clg images\istockphoto-1459063664-170667a.webp")
+       img_top=Image.open(r"clg images\left_img.webp")
        img_top=img_top.resize((650,700),Image.LANCZOS)
        self.photoimg_top=ImageTk.PhotoImage(img_top)
       
@@ -29,7 +29,7 @@ class Face_Recognition:
        f_lbl.place(x=0,y=55,width=650,height=700)
        
        # 2nd image
-       img_bottom=Image.open(r"clg images\ss2.webp")
+       img_bottom=Image.open(r"clg images\Right_img.webp")
        img_bottom=img_bottom.resize((950,700),Image.LANCZOS)
        self.photoimg_bottom=ImageTk.PhotoImage(img_bottom)
       
@@ -37,7 +37,7 @@ class Face_Recognition:
        f_lbl.place(x=650,y=55,width=950,height=700)
        
        # Button
-       b1=Button(f_lbl,text="Face Recognition",command=self.face_recog,cursor="hand2",font=("times new roman",18,"bold"),bg="darkgreen",fg="white")
+       b1=Button(f_lbl,text="Face Recognition",command=self.face_recog,cursor="hand2",font=("times new roman",18,"bold"),bg="DodgerBlue",fg="white")
        b1.place(x=365,y=620,width=200,height=40)
        
     #******************Attendance************************

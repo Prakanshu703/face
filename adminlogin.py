@@ -30,7 +30,7 @@ class AdminLogin_window:
         self.root.geometry("1550x800+0+0")
         
         
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\W1M7KR.jpg") 
+        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Bluebg_1.jpg") 
         lbl_bg=Label(self.root,bg="black",image=self.bg)
         lbl_bg.place(x=0,y=0,relwidth=1,relheight=1)
 
@@ -40,8 +40,8 @@ class AdminLogin_window:
         
  
         
-        get_str=Label(frame,text="Welcome",font=("times new roman",25,"bold"),fg="black",bg="white")
-        get_str.place(x=100,y=20)
+        get_str=Label(frame,text="Welcome | Admin",font=("times new roman",25,"bold"),fg="black",bg="white")
+        get_str.place(x=50,y=20)
 
         get_str1=Label(frame,text="Enter your credentials to access your account",font=("times new roman",12,"bold"),fg="#B3B3B3",bg="white")
         get_str1.place(x=17,y=65)   
@@ -64,18 +64,18 @@ class AdminLogin_window:
  
          
         # LoginButton
-        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="#483ECD",border=0,activeforeground="white",activebackground="red")
+        loginbtn=Button(frame,command=self.login,text="Sign in",font=("times new roman",15,"bold"),bd=3,relief=RIDGE,fg="white",bg="DodgerBlue",border=0,activeforeground="white",activebackground="#483ECD")
         loginbtn.place(x=30,y=300,width=280,height=35)
         label=Label(frame,text="Don't have an account?",fg='black',bg='white',font=('times new roman',9))
         label.place(x=30, y=350)
         # RegisterButton
-        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#483ECD",activeforeground="white",activebackground="black")
-        registerbtn.place(x=175,y=350)
+        registerbtn=Button(frame,width=6,text="Sign Up",border=0,command=self.register_window,font=("times new roman",10,"bold"),borderwidth=0,fg="DodgerBlue",activeforeground="white",activebackground="#483ECD")
+        registerbtn.place(x=170,y=350)
 
         label2=Label(frame,text="Forgot your password?",fg='black',bg='white',font=('times new roman',9))
         label2.place(x=30, y=385)
         #forgetpasswordButton
-        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="#483ECD",activeforeground="white",activebackground="black")
+        passwordbtn=Button(frame,width=15,text="Reset Password",border=0,command=self.forget_password_window,font=("times new roman",10,"bold"),borderwidth=0,fg="DodgerBlue",activeforeground="white",activebackground="#483ECD")
         passwordbtn.place(x=170,y=385)
 
        
@@ -205,67 +205,67 @@ class Register:
         self.var_confpass=StringVar()
         
       # ************bg image**************
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\—Pngtree—captivating acrylic art mesmerizing ocean_15222733 (1).jpg")
+        self.bg=ImageTk.PhotoImage(file=r"C:\Users\PRAKANSHU\Desktop\Face recognition system\clg images\Bluebg_2.jpg")
         
         bg_lbl=Label(self.root,image=self.bg)
         bg_lbl.place(x=0,y=0,relwidth=1,relheight=1)
         
          #***************main frame*****************
         frame=Frame(self.root,bg="white")
-        frame.place(x=450,y=100,width=680,height=550)
+        frame.place(x=610,y=100,width=350,height=550)  #x=610,y=170,width=340,height=450
         
         register_lbl=Label(frame,text="Join us today!",font=("times new roman",25,"bold"),fg="black",bg="white")
-        register_lbl.place(x=250,y=20)
+        register_lbl.place(x=65,y=20)
         
          #*******************label and entry*********************
         label = Label(frame,text="Sign up now to become a member",fg='#B3B3B3',bg='white',font=('times new roman',15,"bold"))
-        label.place(x=200,y=60)
+        label.place(x=40,y=60)
         #*******************row1
         username=Label(frame,text="Username",font=("times new roman",15,"bold"),bg="white")
-        username.place(x=220,y=100)
+        username.place(x=30,y=100)
         
         self.username_entry=ttk.Entry(frame,textvariable=self.var_username,font=("times new roman",15))
-        self.username_entry.place(x=220,y=130,width=250)
+        self.username_entry.place(x=30,y=130,width=285)
         
          #***********************row2
         
         email=Label(frame,text="Email",font=("times new roman",15,"bold"),bg="white",fg="black")
-        email.place(x=220,y=170)
+        email.place(x=30,y=170)
         
         self.txt_email=ttk.Entry(frame,textvariable=self.var_email,font=("times new roman",15))
-        self.txt_email.place(x=220,y=200,width=250)
+        self.txt_email.place(x=30,y=200,width=285)
         
         #******************************row3
         
         pswd=Label(frame,text="Password",font=("times new roman",15,"bold"),bg="white",fg="black")
-        pswd.place(x=220,y=240)
+        pswd.place(x=30,y=240)
         
         self.txt_pswd=ttk.Entry(frame,textvariable=self.var_pass,font=("times new roman",15))
-        self.txt_pswd.place(x=220,y=270,width=250)
+        self.txt_pswd.place(x=30,y=270,width=285)
         
         confirm_pswd=Label(frame,text="Confirm Password",font=("times new roman",15,"bold"),bg="white",fg="black")
-        confirm_pswd.place(x=220,y=310)
+        confirm_pswd.place(x=30,y=310)
         
         self.txt_confirm_pswd=ttk.Entry(frame,textvariable=self.var_confpass,font=("times new roman",15))
-        self.txt_confirm_pswd.place(x=220,y=340,width=250)
+        self.txt_confirm_pswd.place(x=30,y=340,width=285)
         
         #***********************CheckButton*****************************
         self.var_check=IntVar()
         self.checkbtn=Checkbutton(frame,variable=self.var_check,text="I agree to the Terms and Condition",font=("times new roman",12,"bold"),bg="white",onvalue=1,offvalue=0)
-        self.checkbtn.place(x=70,y=390)
+        self.checkbtn.place(x=50,y=390)
          
          #*********************Button******************************
 
-        b1=Button(frame,command=self.register_data,text="Registeration",font=("times new roman",15,"bold"),fg="white",bd=3,relief=RIDGE,bg="#57a1f8",border=0,activeforeground="white",activebackground="red")
-        b1.place(x=50,y=450,width=575,height=35)
+        b1=Button(frame,command=self.register_data,text="Registeration",font=("times new roman",15,"bold"),fg="white",bd=3,relief=RIDGE,bg="DodgerBlue",border=0,activeforeground="white",activebackground="#483ECD")
+        b1.place(x=30,y=450,width=280,height=35)  #x=30,y=300,width=280,height=35
         
 
         label = Label(frame,text="Have already an account?",fg='black',bg='white',font=('times new roman',9))
         label.place(x=50, y = 500)
         # RegisterButton
         
-        b1=Button(frame,width=6,command=self.return_login,text="Login",borderwidth=0,font=("times new roman",10,"bold"),fg="#57a1f8",bd=3,relief=RIDGE,bg="white",border=0,activeforeground="white",activebackground="red")
-        b1.place(x=200,y=500)
+        b1=Button(frame,width=6,command=self.return_login,text="Login",borderwidth=0,font=("times new roman",10,"bold"),fg="#57a1f8",bd=3,relief=RIDGE,bg="white",border=0,activeforeground="white",activebackground="#483ECD")
+        b1.place(x=180,y=500)
         
       
       #************************ Function declaration **********************

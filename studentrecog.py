@@ -44,8 +44,8 @@ class Student_Face_Recognition_System:
       
 
       # first imag
-      img=Image.open(r"clg images\1_zRfLzCK-UlXjl3DjN5bWCA.png")
-      img=img.resize((1530,130),Image.LANCZOS)
+      img=Image.open(r"clg images\Face attendance_banner.png")
+      img=img.resize((1530,150),Image.LANCZOS)
       self.photoimg=ImageTk.PhotoImage(img)
 
       f_lbl=Label(self.root,image=self.photoimg)            
@@ -53,14 +53,14 @@ class Student_Face_Recognition_System:
 
 
       #bg image
-      img3=Image.open(r"clg images\W1M7KR.jpg")
+      img3=Image.open(r"clg images\backgroung_img.png")
       img3=img3.resize((1530,710),Image.LANCZOS)
       self.photoimg3=ImageTk.PhotoImage(img3)
 
       bg_img=Label(self.root,image=self.photoimg3)
       bg_img.place(x=0,y=130,width=1530,height=710)
 
-      title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE SYSTEM SOFTWARE", font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
+      title_lbl=Label(bg_img, font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
       title_lbl.place(x=0,y=0,width=1530,height=45)
       
       # ******************time*****************
@@ -82,7 +82,7 @@ class Student_Face_Recognition_System:
       b1=Button(bg_img,image=self.photoimg5,cursor="hand2",command=self.face_data) 
       b1.place(x=600,y=100, width=220, height=220)
         
-      b1_1=Button(bg_img,text="Face Detector",command=self.face_data,cursor="hand2", font=("times new roman",15,"bold"),bg="blue",fg="white")
+      b1_1=Button(bg_img,text="Start to Scan",command=self.face_data,cursor="hand2", font=("times new roman",15,"bold"),bg="DodgerBlue",fg="white")
       b1_1.place(x=600,y=300,width=220,height=40)
 
 
